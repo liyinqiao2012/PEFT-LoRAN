@@ -3,7 +3,7 @@
     <p>Low-Rank Adaptation with Non-Linear Transformation (LoRAN)</p>
 </h3>
 
-Parameter-efficient fine-tuning (PEFT) has been widely used in adapting LLMs to downstream tasks, and low-rank adaptation (LoRA) is one of the popular methods in it. In this study, we improve LoRA approaches to alleviate the performance loss from the gap between constrained adaptations and complex downstream tasks by introducing a non-linear transformation (call it LoRAN). For a better adaptation, we also design a brand-new activation function to appropriately fit the accumulated gradient updates during fine-tuning. We implement our method with multiple advanced large language models. Experimental results show that it significantly outperforms a strong baseline on SAMSum summarization and 20 Newsgroups classification tasks. Moreover, when a lower rank is applied, our approach even yields a 1.95-point improvement in the text classification task. 
+Parameter-efficient fine-tuning (PEFT) has been widely used in adapting LLMs to downstream tasks, and low-rank adaptation (LoRA) is one of the popular methods in it. In this study, we improve LoRA approaches to alleviate the performance loss from the gap between constrained adaptations and complex downstream tasks by introducing a non-linear transformation (call it LoRAN). For a better adaptation, we also design a brand-new activation function to appropriately fit the accumulated gradient updates during fine-tuning. We implement our method with multiple advanced large language models. Experimental results show that it significantly outperforms a strong baseline on SAMSum summarization and 20 Newsgroups classification tasks. 
 
 In this project, we develop our LoRAN based on the open-sourced PEFT developed by Huggingface. Therefore, implementations with the original PEFT can easily upgrade their codes to apply our LoRAN in their project. 
 
@@ -51,7 +51,7 @@ peft_config = MLoraConfig(
 
 ### Experiments
 
-We test our approach on SAMSum[1] and 20 Newsgroups[2] tasks with standard pre-processing. Llama-2-Large[3] is used as the foundation model. All these fine-tuned adapters are stored in `experiment`. Feel free to try them 🎉.** 
+We test our approach on SAMSum[1] and 20 Newsgroups[2] tasks with standard pre-processing. Llama-2-Large[3] is used as the foundation model. The fine-tuned adapter examples are stored in `experiment`. Feel free to try them.
 
 Due to the limitation of Git platform, we have to split the big file into several pieces. Please merge them back when you use, like this:
 
