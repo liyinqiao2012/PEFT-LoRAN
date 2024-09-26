@@ -1,0 +1,29 @@
+{
+  "auto_mapping": null,
+  "base_model_name_or_path": "PATH/Llama-2-7b-hf",
+  "bias": "none",
+  "fan_in_fan_out": false,
+  "inference_mode": true,
+  "init_mlora_weights": true,
+  "layers_pattern": null,
+  "layers_to_transform": null,
+  "mlora_af": "Sin",
+  "mlora_af_sin_A": 5e-05,
+  "mlora_af_sin_omega": 10000.0,
+  "mlora_alpha": 16,
+  "mlora_dropout": 0.2,
+  "mlora_use_P": false,
+  "mlora_use_b": false,
+  "modules_to_save": null,
+  "peft_type": "MLORA",
+  "r": [
+    64,
+    4096
+  ],
+  "revision": null,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "task_type": "CAUSAL_LM"
+}
